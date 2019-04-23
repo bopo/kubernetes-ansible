@@ -1,7 +1,7 @@
 ---
 
-- name: YUM安装ETCD
-  yum: name=etcd state=latest
+- name: APT安装ETCD
+  apt: name=etcd state=latest
 
 - name: 设置开启启动ETCD服务
   service: name=etcd enabled=yes
